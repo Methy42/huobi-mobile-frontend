@@ -1,0 +1,27 @@
+.foolter-container {
+  margin-top: 68px;
+  margin-bottom: 34px;
+
+  .link-list-container {
+    padding: 6px 32px 6px 47px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px rgba(255, 255, 255, .29) solid;
+    border-left: 0px;
+    border-right: 0px;
+
+    .link-button {
+      color: #FFFFFF;
+      font-size: 8px;
+      font-family: "Source Han Sans CN-Regular";
+    }
+  }
+
+  .copyright-container {
+    color: #FFFFFF;
+    font-size: 6px;
+    font-family: "Source Han Sans CN-Medium";
+    text-align: center;
+    margin-top: 4px;
+  }
+}

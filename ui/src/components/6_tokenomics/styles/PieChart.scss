@@ -1,0 +1,29 @@
+.pie-chart-wrapper {
+  margin-top: 24px;
+  position: relative;
+
+  .chart-container {
+    width: 210px;
+    height: 210px;
+    margin: auto;
+
+    canvas {
+      background-color: transparent;
+    }
+  }
+
+  .logo-container {
+    width: 94px;
+    margin: auto;
+    position: relative;
+
+    img {
+      width: 94px;
+      height: 94px;
+      border-radius: 43px;
+      position: absolute;
+      top: -152px;
+      z-index: -1;
+    }
+  }
+}

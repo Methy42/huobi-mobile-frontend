@@ -1,0 +1,63 @@
+.more-menu-popup-wrapper {
+  width: 292px;
+  height: 100%;
+  margin-top: 40px;
+  background: #222222 !important;
+
+  .popup-header {
+    width: 261px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    .close-button {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      top: 10px;
+      right: 18px;
+
+      .close-button-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .close-button-x {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+    }
+  }
+
+  .menu-item-list {
+    position: absolute;
+    top: 50px;
+
+    .menu-item {
+      padding: 18px 26px;
+      position: relative;
+
+      span {
+        color: #FFFFFF;
+        font-family: "Source Han Sans CN-Regular";
+        font-size: 16px;
+      }
+
+      img {
+        width: 0;
+        position: absolute;
+        left: 26px;
+        bottom: 10px;
+        transition: width .5s;
+      }
+
+      &.active {
+        img {
+          width: 38px;
+        }
+      }
+    }
+  }
+}

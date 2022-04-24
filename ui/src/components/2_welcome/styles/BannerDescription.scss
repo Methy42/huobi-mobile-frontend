@@ -1,0 +1,22 @@
+.banner-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 34px;
+
+  & * {
+    color: #FFFFFF;
+    font-family: "Source Han Sans CN-Bold";
+  }
+
+  .large-description {
+    font-size: 25px;
+    margin-top: 48px;
+  }
+
+  .normal-description {
+    font-size: 21px;
+    margin-top: 16px;
+  }
+}

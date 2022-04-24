@@ -1,0 +1,23 @@
+.offical-partners-wrapper {
+  margin-top: 12px;
+  padding: 0 15px;
+
+  .offical-partners-list-container {
+    margin-top: 24px;
+    padding: 0 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .offical-partners-card-container {
+      margin-bottom: 20px;
+    }
+  }
+
+  .icon-list-container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

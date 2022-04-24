@@ -1,0 +1,53 @@
+.item-card-wrapper {
+  width: 166px;
+  height: 56px;
+  position: relative;
+  transition: all .5s;
+
+  .item-bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .item-name {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: "Source Han Sans CN-Bold";
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    right: 0px;
+  }
+
+  .item-value {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: "Source Han Sans CN-Regular";
+    position: absolute;
+    left: 10px;
+    bottom: 9px;
+  }
+
+  .item-tip {
+    color: #5589FA;
+    font-size: 9px;
+    font-family: "Source Han Sans CN-Regular";
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+  }
+
+  &.active {
+    transform: scale(1.1);
+  }
+}

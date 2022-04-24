@@ -1,0 +1,16 @@
+.tokenomics-wrapper {
+  margin-top: 32px;
+  padding: 0 15px;
+
+  .list-container {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item-card-container {
+      flex-shrink: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.level-card-wrapper {
+  width: 209px;
+  height: 95px;
+  margin: auto;
+  position: relative;
+
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .5s;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .content-img {
+    width: 128px;
+    height: 74px;
+    position: absolute;
+    top: 12px;
+    left: 40px;
+    right: 41px;
+    bottom: 9px;
+  }
+
+  .level-img {
+    height: 13px;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+  }
+}

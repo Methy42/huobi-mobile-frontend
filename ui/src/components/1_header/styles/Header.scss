@@ -1,0 +1,10 @@
+.header-wrapper {
+  margin-top: 49px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+
+  .empty-block {
+    flex-grow: 1;
+  }
+}
