@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>星际公爵</title>
+    <link rel="icon" href="./img/pie.webp">
+    <meta name="viewport" content="width=device-width,maximum-scale=0,user-scalable=no,shrink-to-fit=no" />
+    <script>
+        if (
+            /Mobi|Android|iPhone/i.test(navigator.userAgent) ||
+            navigator.userAgent.match(/Mobi/i) ||
+            navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/iPhone/i)
+        ) {
+            location.href = "/index.html"
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'TIMES';
+            src: url("./font/SOURCEHANSANSCN-NORMAL.OTF");
+        }
+
+        body {
+            font-family: "TIMES";
+            min-width: 1024px;
+            max-width: 1920px;
+        }
+
+        a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sacle-animation:hover {
+            transform: scale(1.1);
+        }
+
+        .start-btn.sacle-animation:hover {
+            font-weight: bold;
+        }
+
+        .banner-btn.sacle-animation:hover {
+            transform: scale(1.05);
+        }
+
+        .sacle-animation {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .aside-gride-item:hover {
+            background: #1A1A1A;
+        }
+
+        .btn-enter:hover {
+            /* background: linear-gradient(180deg, #6f19f9, #5199F8) !important; */
+            cursor: pointer;
+        }
+
+        .nav-box ul a:hover {
+            font-weight: bold;
+            background: #1C232E;
+        }
+    </style>
+    <link id="links" rel="stylesheet" href="./css/xjgj.css">
+    <script>
+        var pageWidth = document.documentElement.clientWidth;
+        var link = document.getElementById('links')
+
+        function setCss() {
+            if (pageWidth < 1440) {
+                link.setAttribute('href', './css/max1440xjgj.css')
+            } else {
+                link.setAttribute('href', './css/xjgj.css')
+            }
+        }
+        window.onresize = function (e) {
+            pageWidth = e.target.innerWidth;
+            setCss()
+        }
+        setCss()
+
+        function setBgClass(e, domStr, controlClass) {
+            var liDom = document.querySelectorAll(domStr),
+                hasClass = false;
+            e.classList.forEach(function (key) {
+                if (controlClass == key) return hasClass = true;
+            })
+            // console.log(liDom)
+            liDom.forEach(function (item) {
+                item.classList.remove(controlClass)
+            })
+            if (!hasClass) {
+                e.classList.add(controlClass)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="nav-box">
+        <!-- <img src="./img/nav-log.webp" alt="logo"> -->
+        <img src="./svg/logo.svg" alt="logo">
+        <ul id="navLink">
+            <li><a onclick="setBgClass(this,'#navLink li a','nav-active')" href="game.starduke.io"
+                    target="_blank">GAME</a>
+            </li>
+            <li><a onclick="setBgClass(this,'#navLink li a','nav-active')" href="game.starduke.io"
+                    target="_blank">MARKET</a></li>
+            <li><a onclick="setBgClass(this,'#navLink li a','nav-active')" target="_blank">SDK FARM</a></li>
+            <li><a onclick="setBgClass(this,'#navLink li a','nav-active')" target="_blank">LIQUIDITY</a></li>
+            <li><a onclick="setBgClass(this,'#navLink li a','nav-active')" target="_blank">DAO</a></li>
+        </ul>
+        <div>
+            <a class="start-btn sacle-animation" href="game.starduke.io" target="_blank">START</a>
+        </div>
+    </nav>
+    <div class="banner-box">
+        <img src="./img/banner.webp" alt="not sport">
+        <div class="banner-text-box">
+            <div class="banner-text">
+                <p>WELCOME TO STAR DUKE</p>
+                <p>A PLAY-TO-EARN GAME BASED ON BLOCKCHAIN</p>
+            </div>
+            <a href="game.starduke.io" target="_blank" class="banner-btn sacle-animation">ENTER THE GAME</a>
+        </div>
+    </div>
+    <div class="aside-box">
+        <div id="cut2">
+            <div class="aside-title">STORY</div>
+            <p class="aside-p">In the future, the earth environment deteriorates and is no longer suitable for human
+                habitation. Many countries jointly
+                set up an organizationfor outer space exploration to search for a planet suitable for the continuation
+                of
+                human civilization.
+            </p>
+
+            <p class="aside-p" style="margin-top: 37px;">A decentralized exploration game sited on blockchain for the
+                continuation of human civilization in the universe.</p>
+            <div class="aside-btn-box">
+                <a href="https://docs.starduke.io/" target="_blank"
+                    onmouseenter="setBgClass(this,'.aside-btn-box a','btn-active')"
+                    class="aside-btn btn-active btn-enter">
+                    Whitepaper
+                </a>
+                <a href="https://docs.starduke.io/our-token/star-duke-token" target="_blank"
+                    onmouseenter="setBgClass(this,'.aside-btn-box a','btn-active')" class="aside-btn btn-enter">
+                    Tokenomics
+                </a>
+            </div>
+            <div class="aside-card">
+                <img class="sacle-animation" src="./img/aside-card1.webp" alt="aside-car1">
+                <div class="aside-car-text">
+                    <div>
+                        <p class="card-text-title">LAND IN STAR DUKE</p>
+                        <p class="card-text-content">There are 300,000 NFT plots, divided into three levels,R, SR，SSR.
+                        </p>
+                        <p class="card-text-content">Different quality levels correspond to different land types, and
+                            different land types have different income growth rates.</p>
+                    </div>
+                    <div class="card-img-box">
+                        <img class="sacle-animation" src="./img/N.webp" alt="hehe">
+                        <img class="sacle-animation" src="./img/R.webp" alt="hehe">
+                        <img class="sacle-animation" src="./img/SR.webp" alt="hehe">
+                    </div>
+                </div>
+            </div>
+            <div class="aside-card">
+                <div style="text-align: right;margin-right: 50px;justify-content: space-around;" class="aside-car-text">
+                    <div>
+                        <p class="card-text-title">NFT MYSTERY BOX</p>
+                        <p style="margin-bottom: 0;" class="card-text-content">R&D sites and spacecraft have 900000 NFT
+                            Mystery Box
+                        </p>
+                        <p style="margin-bottom: 20px;" class="card-text-content">respectively,divided into 3
+                            levels,R,SR,SSR.</p>
+                        <p class="card-text-content">and each level has 1-5 stars.</p>
+                    </div>
+                    <div>
+                        <img src="./img/star.webp" alt="">
+                    </div>
+                    <!-- <p class="card-text-content">they are divided intofive levels:N,R,SR,SSR,SP.</p> -->
+                </div>
+                <img class="sacle-animation" src="./img/aside-card2.webp" alt="aside-car1">
+            </div>
+        </div>
+        <div id="cut3">
+            <div class="card-text-title">TOKENOMICS</div>
+            <div class="aside-liuc">
+                <div class="chart-box">
+                    <img src="./img/pie.webp" alt="">
+                    <canvas id="myChart" width="290" height="290"></canvas>
+                </div>
+                <div id="legendItems" style="flex: 1;">
+                    <div class="chart-item-box">
+                        <div class="chart-item">
+                            <p class="chart-item-title">Exchange and public offering</p>
+                            <div class="item-detail-box">
+                                <p>10%</p>
+                                <p class="token">(10,000,000 token)</p>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <p class="chart-item-title">Ecosystem</p>
+                            <div class="item-detail-box">
+                                <p>10%</p>
+                                <p class="token">(10,000,000 token)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-item-box">
+                        <div class="chart-item">
+                            <p class="chart-item-title">Adviser</p>
+                            <div class="item-detail-box">
+                                <p>13%</p>
+                                <p class="token">(3,000,000 token)</p>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <p class="chart-item-title">Game rewards</p>
+                            <div class="item-detail-box">
+                                <p>40%</p>
+                                <p class="token">(40,000,000 token)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-item-box">
+                        <div class="chart-item">
+                            <p class="chart-item-title">Community</p>
+                            <div class="item-detail-box">
+                                <p>7%</p>
+                                <p class="token">(7,000,000 token)</p>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <p class="chart-item-title">Market</p>
+                            <div class="item-detail-box">
+                                <p>5%</p>
+                                <p class="token">(5,000,000 token)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-item-box">
+                        <div class="chart-item">
+                            <p class="chart-item-title">Team</p>
+                            <div class="item-detail-box">
+                                <p>10%</p>
+                                <p class="token">(10,000,000 token)</p>
+                            </div>
+                        </div>
+                        <div class="chart-item">
+                            <p class="chart-item-title">Private placement</p>
+                            <div class="item-detail-box">
+                                <p>15%</p>
+                                <p class="token">(15,000,000 token)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="./img/liuc.webp" alt="liuc"> -->
+            </div>
+        </div>
+        <div id="cut4">
+            <div class="card-text-title">SIX FEATURES</div>
+            <div class="aside-gride">
+                <div class="aside-gride-item">
+                    <img style="margin-top: -10px;" src="./img/gride1.webp" alt="item">
+                    <p class="item-tip">FAIR MYSTERY BOX GAME</p>
+                    <p class="item-text">ANY PLAYER HAS THE OPPORTUNITY TO EARN A HIGH VALUE NFT</p>
+                </div>
+                <div class="aside-gride-item">
+                    <img src="./img/gride2.webp" alt="item">
+                    <p class="item-tip">RICH GAMEPLAY</p>
+                    <p class="item-text">VARIOUS GAME MECHANICS,MAKE MONEY WHILE PLAYING.</p>
+                </div>
+                <div class="aside-gride-item">
+                    <img src="./img/gride3.webp" alt="item">
+                    <p class="item-tip">ECOLOGICAL SCENARIOS</p>
+                    <p class="item-text">BUILD R&D SITES AND SPACECRAFT TO EARN SDK TOKENS SUPPORT FUNCTION UPGRADE</p>
+                </div>
+            </div>
+            <div class="aside-gride">
+                <div class="aside-gride-item">
+                    <img src="./img/gride4.webp" alt="item">
+                    <p class="item-tip">DAILY CHALLENGES</p>
+                    <p>（COMING SOON）</p>
+                    <p class="item-text">
+                        TAKE PART IN DAILY CHALLENGE
+                        ANDWIN REWARDS</p>
+                </div>
+                <div class="aside-gride-item">
+                    <img src="./img/gride5.webp" alt="item">
+                    <p class="item-tip">LIQUIDITY MINING</p>
+                    <p class="item-text">EARN CLNY TOKEN BY STAKING LP TOKENS</p>
+                </div>
+                <div class="aside-gride-item">
+                    <img src="./img/gride6.webp" alt="item">
+                    <p class="item-tip">HOT NFT TRADE</p>
+                    <p class="item-text">NFT FROM MYSTERY BOXES CAN BE SOLD ON THE MARKET</p>
+                </div>
+            </div>
+        </div>
+        <div id="cut5">
+            <div class="card-text-title">OFFICIAL PARTNERS</div>
+            <div class="aside-gride">
+                <div style="margin-left: 0;" class="cut5-gride-item sacle-animation">
+                    <img src="./svg/binance.svg" alt="binance">
+                </div>
+                <div class="cut5-gride-item sacle-animation">
+                    <img src="./svg/pancake.svg" alt="pancake">
+                </div>
+                <div class="cut5-gride-item sacle-animation">
+                    <img src="./svg/crypto.svg" alt="crypto">
+                </div>
+                <div class="cut5-gride-item sacle-animation">
+                    <img src="./svg/seektiger.svg" alt="seektiger">
+                </div>
+            </div>
+            <div class="aside-gride">
+                <div style="margin-left: 0;" class="cut5-gride-item sacle-animation">
+                    <img src="./svg/bitwell.svg" alt="bitwell">
+                </div>
+                <!-- <div class="cut5-gride-item-fk">
+                    <img src="./img/huobi.webp" alt="huobi">
+                </div> -->
+                <div class="cut5-gride-item sacle-animation">
+                    <img src="./svg/huobi.svg" alt="huobi">
+                </div>
+                <div class="cut5-gride-item sacle-animation">
+                    <img src="./svg/gala.svg" alt="gala">
+                </div>
+                <div class="cut5-gride-item sacle-animation">
+                    <img src="./svg/meta.svg" alt="metasense">
+                </div>
+            </div>
+            <div class="aside-gride">
+                <div style="margin-left: 0;" class="cut5-gride-icon sacle-animation">
+                    <a href="">
+
+                        <img src="./img/bihu.webp" alt="bihu">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="">
+
+                        <img src="./img/pancakes.webp" alt="pancakes">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="https://twitter.com/StarDukeGames" target="_blank">
+                        <img src="./img/twiter.webp" alt="twiter">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="https://discord.gg/3RQ9V255MB" target="_blank">
+
+                        <img src="./img/discord.webp" alt="discord">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="https://t.me/StarDuke" target="_blank">
+                        <img src="./img/telegram.webp" alt="telegram">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="https://starduke.medium.com/" target="_blank">
+                        <img src="./img/medium-circle-fill.webp" alt="medium-circle-fill">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="">
+                        <img src="./img/wtfaaa.webp" alt="wtfaaa">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="">
+
+                        <img src="./img/wtfbbb.webp" alt="wtfbbb">
+                    </a>
+                </div>
+                <div class="cut5-gride-icon sacle-animation">
+                    <a href="">
+
+                        <img src="./img/coinmarketcap.webp" alt="coinmarketcap">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="cut6">
+            <div class="card-text-title">ROAD MAP</div>
+            <div class="cut6-btn-box">
+                <div onmouseenter="setBgClass(this,'.cut6-btn-box div','cut6-btn-an')" style="margin-left: 0;"
+                    class="cut6-btn cut6-btn-an btn-enter">
+                    PHASE 1:IN2022
+                </div>
+                <div onmouseenter="setBgClass(this,'.cut6-btn-box div','cut6-btn-an')" class="cut6-btn btn-enter">
+                    PHASE 2
+                </div>
+                <div onmouseenter="setBgClass(this,'.cut6-btn-box div','cut6-btn-an')" class="cut6-btn btn-enter">
+                    PHASE 3
+                </div>
+            </div>
+            <div class="liuc-box">
+                <div class="liuc-img-box">
+                    <div class="jd-text jd-text1">2022 Q1</div>
+                    <div class="jd-text jd-text2">2022 Q2</div>
+                    <div class="jd-text jd-text3">2022 Q3</div>
+                    <div class="jd-text jd-text4">2022 Q4</div>
+                    <img class="liuc-img" src="./img/liuc-step.webp" alt="">
+                    <div class="liuc-img-talk liuc-img-talk1">
+                        <div class="talk-img-box">
+                            <div class="talk-text-box">
+                                <p class="talk-title">GAME PLANNING AND DESIGN </p>
+                                <p class="talk-content">- Game planning and design</p>
+                                <p class="talk-content">- Game prototype demo</p>
+                                <p class="talk-content">- Game art and graphics publishing</p>
+                            </div>
+                            <img class="talk-img" src="./img/talk3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="liuc-img-talk liuc-img-talk2">
+                        <div class="talk-img-box">
+                            <div class="talk-text-box2">
+                                <p class="talk-title">GAME TESTING AND NFT SALES </p>
+                                <p class="talk-content">Star Duke game Beta test -</p>
+                                <p class="talk-content">Planet land, planet R&D site, spacecraft NFTs sales -</p>
+                            </div>
+                            <img class="talk-img" src="./img/talk1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="liuc-img-talk liuc-img-talk3">
+                        <div class="talk-img-box">
+                            <div class="talk-text-box">
+                                <p class="talk-title">GAME PUBLICLY RELEASED
+                                    TOKEN IS ONLINE
+                                </p>
+                                <p class="talk-content">- Public release of the game</p>
+                                <p class="talk-content">-NFT market release</p>
+                                <p class="talk-content">- $SDK Token issued</p>
+                            </div>
+                            <img class="talk-img" src="./img/talk.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="liuc-img-talk liuc-img-talk4">
+                        <div class="talk-img-box">
+                            <div class="talk-text-box2">
+                                <p class="talk-title">AME FEATURES IMPROVED WITH IGO </p>
+                                <p class="talk-content">Star Duke game Beta test-</p>
+                                <p class="talk-content">Planet land, planet R&D site, spacecraft NFTs sales-</p>
+                            </div>
+                            <img class="talk-img" src="./img/talk1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="cut7">
+            <div style="font-size: 34px;" class="card-text-title">ROAD MAP</div>
+            <p class="cut7-text-title">GET A MONTHLY UPDATE FROM OUR TEAM</p>
+            <div class="input-box">
+                <div class="input-fa">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Email Address">
+                    <div class="submit-btn">Subscribe</div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="footer-box">
+        <p class="footer-nav need">
+            <a href="https://docs.starduke.io/" target="_blank">ABOUT US</a>
+            <a>VULNERABILITY BOUNTY</a>
+            <a href="https://docs.starduke.io/" target="_blank">Q&A</a>
+            <a>AUDIT</a>
+        </p>
+        <p class="footer-mark">Copyright © 2022.AII Rights Reserved</p>
+    </div>
+</body>
+<script src="./chart.min.js"></script>
+<script src="./xjgj.js"></script>
+
+</html>

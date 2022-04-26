@@ -13,14 +13,16 @@
     .link-button {
       color: #FFFFFF;
       font-size: 8px;
-      font-family: "Source Han Sans CN-Regular";
+      // font-family: "Source Han Sans CN-Regular";
+      font-family: "SourceHanSansCN-Regular", "Source Han Sans CN-Regular";
     }
   }
 
   .copyright-container {
     color: #FFFFFF;
     font-size: 6px;
-    font-family: "Source Han Sans CN-Medium";
+    // font-family: "Source Han Sans CN-Medium";
+    font-family: "SourceHanSansCN-Medium", "Source Han Sans CN-Medium";
     text-align: center;
     margin-top: 4px;
   }

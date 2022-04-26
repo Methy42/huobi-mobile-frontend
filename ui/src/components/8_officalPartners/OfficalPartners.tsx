@@ -50,7 +50,7 @@ export default defineComponent({
         "/images/OfficalPartners/Icon2@2x.png",
         "/images/OfficalPartners/Icon2@3x.png"
       ],
-      url: "https://twitter.com/StarDukeGames"
+      url: "https://t.me/StarDuke"
     }, {
       images: [
         "/images/OfficalPartners/Icon3.png",
@@ -78,7 +78,7 @@ export default defineComponent({
         "/images/OfficalPartners/Icon6@2x.png",
         "/images/OfficalPartners/Icon6@3x.png"
       ],
-      url: "https://t.me/StarDuke"
+      url: "https://twitter.com/StarDukeGames"
     }, {
       images: [
         "/images/OfficalPartners/Icon7.png",

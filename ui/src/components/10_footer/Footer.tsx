@@ -5,7 +5,7 @@ export default defineComponent({
   setup() {
     return () => <div class="foolter-container">
       <div class="link-list-container">
-        <div class="link-button">
+        <div class="link-button" onClick={ () => location.href = "https://docs.starduke.io/" }>
           <span>ABOUT US</span>
         </div>
         <div class="link-button">

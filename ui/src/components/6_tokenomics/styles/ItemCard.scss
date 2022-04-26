@@ -20,7 +20,8 @@
   .item-name {
     color: #FFFFFF;
     font-size: 10px;
-    font-family: "Source Han Sans CN-Bold";
+    // font-family: "Source Han Sans CN-Bold";
+    font-family: "SourceHanSansCN-Bold", "Source Han Sans CN-Bold";
     white-space: nowrap;
     text-overflow: ellipsis;
     position: absolute;
@@ -32,7 +33,8 @@
   .item-value {
     color: #FFFFFF;
     font-size: 10px;
-    font-family: "Source Han Sans CN-Regular";
+    // font-family: "Source Han Sans CN-Regular";
+    font-family: "SourceHanSansCN-Regular", "Source Han Sans CN-Regular";
     position: absolute;
     left: 10px;
     bottom: 9px;
@@ -41,7 +43,8 @@
   .item-tip {
     color: #5589FA;
     font-size: 9px;
-    font-family: "Source Han Sans CN-Regular";
+    // font-family: "Source Han Sans CN-Regular";
+    font-family: "SourceHanSansCN-Regular", "Source Han Sans CN-Regular";
     position: absolute;
     right: 9px;
     bottom: 9px;

@@ -1,9 +1,8 @@
 <template>
-  <!-- <Header
-    :viewMainTop="viewMainTop >= 0 && viewMainTop < 160"
+  <Header
     :showRightPopup="() => $refs.MoreMenuPopup.open()"
   />
-  <Welcome ref="Welcome" />
+  <!-- <Welcome ref="Welcome" />
   <Story ref="Story" />
   <StarDuke ref="StarDuke" />
   <Nft ref="Nft" />
@@ -11,8 +10,8 @@
   <Features ref="Features" />
   <OfficalPartners ref="OfficalPartners" />
   <RoadMap ref="RoadMap" />
-  <Footer />
-  <MoreMenuPopup ref="MoreMenuPopup" /> -->
+  <Footer /> -->
+  <MoreMenuPopup ref="MoreMenuPopup" />
   <component
     v-for="({ name, isPlay }, index) in components"
     :key="index"
@@ -42,7 +41,6 @@ export default defineComponent({
   data() {
     return {
       components: [
-        { name: "Header", isPlay: true },
         { name: "Welcome", isPlay: true },
         { name: "Story", isPlay: true },
         { name: "StarDuke", isPlay: true },
@@ -51,8 +49,7 @@ export default defineComponent({
         { name: "Features", isPlay: true },
         { name: "OfficalPartners", isPlay: true },
         { name: "RoadMap", isPlay: true },
-        { name: "Footer", isPlay: true },
-        { name: "MoreMenuPopup", isPlay: true },
+        { name: "Footer", isPlay: true }
       ],
     };
   },

@@ -5,7 +5,7 @@
   background: #222222 !important;
 
   .popup-header {
-    width: 261px;
+    width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -41,7 +41,8 @@
 
       span {
         color: #FFFFFF;
-        font-family: "Source Han Sans CN-Regular";
+        // font-family: "Source Han Sans CN-Regular";
+        font-family: "SourceHanSansCN-Regular", "Source Han Sans CN-Regular";
         font-size: 16px;
       }
 

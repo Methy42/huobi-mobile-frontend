@@ -4,7 +4,7 @@ import "../styles/TimeAxis.scss"
 export default defineComponent({
   setup() {
     return () => <div class="time-axis-wrapper">
-      <div class="left-container">
+      {/* <div class="left-container">
         <div class="q1-lable-container">
           <span class="label">2022 Q1</span>
         </div>
@@ -56,7 +56,8 @@ export default defineComponent({
         <div class="q4-lable-container">
           <span class="label">2022 Q4</span>
         </div>
-      </div>
+      </div> */}
+      <img class="axis-image" src="/images/RoadMapTimeAxis/Axis.png" alt="" srcset="/images/RoadMapTimeAxis/Axis@2x.png 2x,/images/RoadMapTimeAxis/Axis@3x.png 3x" />
     </div>
   }
 });

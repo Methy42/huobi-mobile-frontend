@@ -13,15 +13,20 @@ export default defineComponent({
   },
   setup(props) {
     const menuItemList = [{
-      lable: "GAME"
+      lable: "GAME",
+      url: "https://game.starduke.io"
     },{
-      lable: "MARKET"
+      lable: "MARKET",
+      url: "https://game.starduke.io"
     },{
-      lable: "SDK FARM"
+      lable: "SDK FARM",
+      url: "#"
     },{
-      lable: "LIQUIDITY"
+      lable: "LIQUIDITY",
+      url: "#"
     },{
-      lable: "DAO"
+      lable: "DAO",
+      url: "#"
     }];
 
     const activeIndex = ref(NaN);
@@ -34,7 +39,10 @@ export default defineComponent({
         </div>
       </div>
       <div class="menu-item-list">
-        { menuItemList.map((item, index) => <div class={{ "menu-item": true, "active": index === activeIndex.value }} onClick={ () => activeIndex.value = index }>
+        { menuItemList.map((item, index) => <div class={{ "menu-item": true, "active": index === activeIndex.value }} onClick={ () => {
+          activeIndex.value = index;
+          location.href = item.url;
+        } }>
           <span>{ item.lable }</span>
           <img src="/images/MoreMenuPopup/MenuItemActiveLine.png" alt="" srcset="/images/MoreMenuPopup/MenuItemActiveLine@3x.png 2x,/images/MoreMenuPopup/MenuItemActiveLine@3x.png 3x" />
         </div>) }
