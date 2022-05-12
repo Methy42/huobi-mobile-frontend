@@ -13,7 +13,7 @@ export default defineComponent({
           <span class="title">GAME TASTING & NFT SALES</span>
           <span class="detail">
             - Star Duke game Beta test
-            - Planet land, planet R&D site spacecraft NFTs sales
+            - Planet land, planet R&D base spacecraft NFTs sales
           </span>
         </div>
         <div class="q3-lable-container">

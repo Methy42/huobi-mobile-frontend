@@ -40,7 +40,7 @@ export default defineComponent({
         "/images/FeaturesCard/Description3@2x.png",
         "/images/FeaturesCard/Description3@3x.png"
       ],
-      tip: "BUILD R&D SITES & SPACECRAFT TO EARN SDK TOKENS FOR FUNCTION UPGRADE"
+      tip: "BUILD R&D BASES & SPACECRAFT TO EARN SDK TOKENS FOR FUNCTION UPGRADE"
     }, {
       icon: [
         "/images/FeaturesCard/Icon4.png",

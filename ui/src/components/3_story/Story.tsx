@@ -11,7 +11,7 @@ Many countries jointly set up an organization for
 outer space exploration to search for a planet 
 suitable for the continuation
 of human civilization.` } />
-      <basic-tip class="basic-tip-container" content={ `A decentralized exploration game sited on blockchain ` } />
+      <basic-tip class="basic-tip-container" content={ `A decentralized exploration game based on blockchain ` } />
       <div class="space-1"></div>
       <back-button lable={ "White paper" } onClick={ () => location.href = "https://docs.starduke.io/" } />
       <div class="space-2"></div>
