@@ -57,7 +57,7 @@ export default defineComponent({
           <span class="label">2022 Q4</span>
         </div>
       </div> */}
-      <img class="axis-image" src="/images/RoadMapTimeAxis/Axis.png" alt="" srcset="/images/RoadMapTimeAxis/Axis@2x.png 2x,/images/RoadMapTimeAxis/Axis@3x.png 3x" />
+      <img class="axis-image" src="/images/RoadMapTimeAxis/WechatIMG71.png" alt="" />
     </div>
   }
 });
