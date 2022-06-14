@@ -1,5 +1,6 @@
 <template>
   <Header
+    v-if="!isWeb"
     :showRightPopup="() => $refs.MoreMenuPopup.open()"
   />
   <!-- <Welcome ref="Welcome" />
@@ -11,15 +12,18 @@
   <OfficalPartners ref="OfficalPartners" />
   <RoadMap ref="RoadMap" />
   <Footer /> -->
-  <MoreMenuPopup ref="MoreMenuPopup" />
-  <component
-    v-for="({ name, isPlay }, index) in components"
-    :key="index"
-    :is="name"
-    :ref="name"
-    :isPlay="isPlay"
-    :class="{ 'component-container': true, 'component-no-play': !isPlay }"
-  ></component>
+  <MoreMenuPopup v-if="!isWeb" ref="MoreMenuPopup" />
+  <template v-if="!isWeb">
+    <component
+      v-for="({ name, isPlay }, index) in components"
+      :key="index"
+      :is="name"
+      :ref="name"
+      :isPlay="isPlay"
+      :class="{ 'component-container': true, 'component-no-play': !isPlay }"
+    ></component>
+  </template>
+  <iframe class="web-iframe" v-if="isWeb" src="/web/index.html" frameborder="0"></iframe>
 </template>
 
 <script lang="ts">
@@ -36,7 +40,8 @@ export default defineComponent({
   },
   computed: {
     viewMainTop: () => viewMainTop,
-    viewMainHeight: () => viewMainHeight
+    viewMainHeight: () => viewMainHeight,
+    isWeb: () => (window as any).isWeb
   },
   data() {
     return {
@@ -137,5 +142,10 @@ body {
     opacity: 0;
     transform: translate(0px, 100px);
   }
+}
+
+.web-iframe {
+  width: 100vw;
+  height: 100vh;
 }
 </style>

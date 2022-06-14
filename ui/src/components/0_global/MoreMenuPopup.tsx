@@ -14,10 +14,10 @@ export default defineComponent({
   setup(props) {
     const menuItemList = [{
       lable: "GAME",
-      url: "https://game.starduke.io"
+      url: "http://game.starduke.io"
     },{
       lable: "MARKET",
-      url: "https://game.starduke.io"
+      url: "http://game.starduke.io"
     },{
       lable: "SDK FARM",
       url: "#"

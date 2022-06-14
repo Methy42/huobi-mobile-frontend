@@ -7,7 +7,7 @@ export default defineComponent({
     return () => <div class="header-wrapper">
       <logo />
       <div class="empty-block"></div>
-      <start-button onClick={ () => location.href = "https://game.starduke.io" } />
+      <start-button onClick={ () => location.href = "http://game.starduke.io" } />
       <more-button onClick={ props.showRightPopup } />
     </div>
   }

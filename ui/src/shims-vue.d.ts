@@ -6,3 +6,9 @@ declare module '*.vue' {
 }
 
 declare module "*.svg";
+
+declare global {
+  interface Window {
+    isWeb?: boolean;
+  }
+}
